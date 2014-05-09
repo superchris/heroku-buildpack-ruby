@@ -521,6 +521,8 @@ WARNING
             "NOKOGIRI_USE_SYSTEM_LIBRARIES" => "true"
           }
           env_vars["BUNDLER_LIB_PATH"] = "#{bundler_path}" if ruby_version.ruby_version == "1.8.7"
+          puts "Where am I?"
+          puts `pwd`
           puts "Running: #{bundle_command}"
           puts "Path: #{ENV['PATH']}"
           puts `which ruby`
